@@ -12,19 +12,17 @@ import BrainMRI from './components/experiences/BrainMRI';
 import InvisibleWeb from './components/experiences/InvisibleWeb';
 import BleedingClock from './components/experiences/BleedingClock';
 import PayrollAbyss from './components/experiences/PayrollAbyss';
-import SurvivalTest from './components/experiences/SurvivalTest';
-import EscapeRoom from './components/experiences/EscapeRoom';
-import BleedingCalculator from './components/experiences/BleedingCalculator';
+import The3AMCall from './components/experiences/The3AMCall';
+import InterrogationRoom from './components/experiences/InterrogationRoom';
+import SilentBleed from './components/experiences/SilentBleed';
 
 // Agrupamos e refinamos as categorias
 const EXPERIENCES = [
+  { id: '3amcall', title: 'A Ligação às 3 da Manhã', category: 'Horror Corporativo', subtitle: 'A empresa não dorme. E você também não.', duration: 'Interativo', tag: 'Top 1', bg: 'from-red-900/40', thumb: 'https://images.unsplash.com/photo-1517868351636-70e1bba87c26?q=80&w=2000', component: The3AMCall },
+  { id: 'interrogation', title: 'A Sala de Interrogatório', category: 'Horror Corporativo', subtitle: 'Síndrome do Impostor Sistêmica (Usa Webcam)', duration: 'Interativo', tag: 'Tensão', bg: 'from-zinc-900/40', thumb: 'https://images.unsplash.com/photo-1509928015542-d61cc0824982?w=800&q=80', component: InterrogationRoom },
+  { id: 'silentbleed', title: 'O Cofre do Silêncio', category: 'Horror Corporativo', subtitle: 'A morte silenciosa do caixa', duration: '15 seg', tag: 'Novo', bg: 'from-orange-900/40', thumb: 'https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&q=80', component: SilentBleed },
   { id: 'avalanche', title: 'A Avalanche do Fundador', category: 'O Peso da Liderança', subtitle: 'A síndrome do apagador de incêndios', duration: 'Interativo', tag: 'Top 1', bg: 'from-red-900/40', thumb: 'https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=800&q=80', component: FounderAvalanche },
-  { id: 'survival', title: 'O Teste de Sobrevivência', category: 'O Peso da Liderança', subtitle: '60s para evitar a falência. Faça suas escolhas.', duration: 'Interativo', tag: 'Novo', bg: 'from-red-900/40', thumb: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80', component: SurvivalTest },
-  { id: 'escaperoom', title: 'Escape Room Operacional', category: 'O Peso da Liderança', subtitle: 'O caos de um desktop abandonado', duration: 'Interativo', tag: 'Trending', bg: 'from-blue-900/40', thumb: 'https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=2000', component: EscapeRoom },
-  { id: 'iphone', title: 'Celular do Colapso', category: 'O Peso da Liderança', subtitle: 'Uma chuva violenta de notificações', duration: '30 seg', tag: '', bg: 'from-blue-900/40', thumb: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80', component: IPhoneCollapse },
-  
-  { id: 'calculator', title: 'A Calculadora de Sangramento', category: 'Caixa & Finanças', subtitle: 'Raio-X financeiro da sua dependência', duration: 'Interativo', tag: 'Top 1', bg: 'from-yellow-900/40', thumb: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80', component: BleedingCalculator },
-  { id: 'abyss', title: 'O Abismo da Folha', category: 'Caixa & Finanças', subtitle: 'O ralo de luxo mensal', duration: 'Interativo', tag: 'Novo', bg: 'from-zinc-900/40', thumb: 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=800&q=80', component: PayrollAbyss },
+  { id: 'abyss', title: 'O Abismo da Folha', category: 'Caixa & Finanças', subtitle: 'O ralo de luxo mensal', duration: 'Interativo', tag: '', bg: 'from-zinc-900/40', thumb: 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=800&q=80', component: PayrollAbyss },
   { id: 'saas', title: 'O Dashboard do Caos', category: 'Caixa & Finanças', subtitle: 'Simulador de colapso de receita', duration: '1 min', tag: '', bg: 'from-orange-900/40', thumb: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80', component: SaaSChaosDashboard },
   
   { id: 'mri', title: 'A Ressonância Magnética', category: 'Diagnóstico Sistêmico', subtitle: 'Mapeando os tumores operacionais', duration: 'Interativo', tag: '', bg: 'from-blue-900/40', thumb: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=800&q=80', component: BrainMRI },
